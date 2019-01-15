@@ -1,0 +1,28 @@
+[user]
+name = Longfei Zhao
+email = longfei.zhao@yahoo.com
+
+[color]
+ui = auto
+diff = auto
+branch = auto
+status = auto
+
+[core]
+editor = vim
+
+[alias]
+log1 = log --graph --abbrev-commit --left-right --decorate --format=format:'%C(bold blue)%h%C(reset) %C(dim green)%an%C(reset) - %C(bold yellow)%d%C(reset) %C(white)%s%C(reset) %C(white)'
+log2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)%aD%C(reset) %C(green)(%ar)%C(reset)%C(bold yellow)%d%C(reset) %C(dim white) - %an%C(reset)%n'' %C(white)%s%C(reset)'
+
+l = log --graph --abbrev-commit --decorate --author="Long*"
+l1 = log --graph --abbrev-commit --author="Long*" --left-right --decorate --format=format:'%C(bold blue)%h%C(reset) %C(dim green)%an%C(reset) - %C(bold yellow)%d%C(reset) %C(white)%s%C(reset) %C(white)'
+l2 = log --graph --abbrev-commit --decorate --author="Long*" --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)%aD%C(reset) %C(green)(%ar)%C(reset)%C(bold yellow)%d%C(reset) %C(dim white) - %an%C(reset)%n'' %C(white)%s%C(reset)'
+
+df = diff HEAD~1 HEAD
+
+[diff]
+# external = /usr/local/bin/git-diff.sh
+
+[merge]
+ff = no
